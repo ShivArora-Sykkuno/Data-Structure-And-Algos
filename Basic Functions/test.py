@@ -1,23 +1,22 @@
-def setZeroes(matrix): 
-    row =[0 for i in range(len(matrix))]
-    cols = [0 for i in range(len(matrix[0]))]
-    for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            if matrix[i][j] == 0:
-                row[i] = -1
-                cols[j] =-1
+def findMin(nums):
+    low, high = 0, len(nums)-1
+    mini = nums[0]
+    while high >= low:
+        mid = (low + high) // 2
+        if nums[mid] >= nums[low]:
+            if mini > nums[low]:
+                mini = nums[low]
+            low = mid + 1
+        else:
+            if mini > nums[mid]:
+                mini = nums[mid]
+            high = mid - 1
+        
+        if nums[mid] == nums[low] == nums[high]:
+            low += 1
+            high -= 1
+            continue
+
+    return mini
     
-    for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            if row[i]==-1 or cols[j] == -1:
-                matrix[i][j] = 0
-    
-    return matrix
-
-
-matrix = [[1,1,1],[1,0,1],[1,1,1]]
-print(setZeroes(matrix))
-
-# # list comprehension to create a list of indices
-# arr = [0 for i in range(len(matrix))]
-# print(arr)
+print(findMin([3,1]))
