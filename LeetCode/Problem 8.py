@@ -28,4 +28,3 @@ class Solution:
             return INT_MAX
         
         return num
-        
