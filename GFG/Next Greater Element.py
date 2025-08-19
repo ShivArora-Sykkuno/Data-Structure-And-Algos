@@ -11,6 +11,7 @@ class Solution:
                 
             if len(stack) != 0:
                 res[i] = stack[-1]
+                
             stack.append(arr[i])
         return res
         
