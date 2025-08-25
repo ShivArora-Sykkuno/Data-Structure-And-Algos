@@ -1,4 +1,6 @@
 from math import sqrt
+
+
 def factors(num):
     lst =[]
     for i in range(1, (num//2)+1):  # Check up to num//2 as factors cannot be greater than half of the number
@@ -6,6 +8,7 @@ def factors(num):
             lst.append(i)
     lst.append(num)
     return lst
+
 
 
 
