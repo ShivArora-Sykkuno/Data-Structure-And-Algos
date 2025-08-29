@@ -25,7 +25,7 @@ I'm learning DSA to:
 - [x] Sorting Algorithms
 - [x] Searching Algorithms
 - [x] Hashing
-- [ ] Greedy Algorithms
+- [x] Greedy Algorithms
 - [ ] Bit Manipulation
 - [ ] Trees (Binary Tree, BST)
 - [ ] Heap
