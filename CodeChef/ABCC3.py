@@ -14,7 +14,6 @@ for _ in range(int(input())):
     for i in range(num - 1, -1, -1):
         c[i] = c[i + 1] + (1 if str[i] == 'c' else 0)
 
-    # print(a, c)
     res = float('inf')
     for i in range(1, len(b)):
         res = min(res, a[b[i - 1]] + c[b[i]])
