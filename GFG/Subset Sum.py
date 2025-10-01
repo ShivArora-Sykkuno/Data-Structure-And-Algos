@@ -9,7 +9,7 @@ class Solution:
             return
         self.solve(index+1, total+ arr[index], arr) 
         self.solve(index+1, total, arr)
-        
-	def subsetSums(self, arr):
+    
+    def subsetSums(self, arr):
 	    self.solve(0, 0, arr)
 	    return self.ans
