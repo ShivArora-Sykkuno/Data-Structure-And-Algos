@@ -1,5 +1,5 @@
-from typing import List
 from collections import deque
+from typing import List
 class Solution:
     
     def minimumMultiplications(self, arr : List[int], start : int, end : int) -> int:
